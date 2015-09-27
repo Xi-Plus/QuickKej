@@ -2,7 +2,7 @@
 <head>
 <base href="http://kej.tw/flvretriever/">
 <meta charset="UTF-8">
-<title>Fast Kej's FLV Retriever</title>
+<title>Quick Kej's FLV Retriever</title>
 </head>
 <body>
 <center>
