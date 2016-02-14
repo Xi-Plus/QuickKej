@@ -1,8 +1,9 @@
 <html>
 <head>
-<base href="http://kej.tw/flvretriever/">
-<meta charset="UTF-8">
-<title>Quick Kej's FLV Retriever</title>
+	<meta charset="UTF-8">
+	<base href="http://kej.tw/flvretriever/">
+	<title>Quick Kej's FLV Retriever</title>
+	<meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <body>
 <center>
