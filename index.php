@@ -15,23 +15,17 @@
 </center>
 <hr>
 <?php
-iF(@$_GET["url"]!=""){
-	$html=file_get_contents("http://kej.tw/flvretriever/youtube.php?videoUrl=".$_GET["url"]);
+if (isset($_GET["url"]) && $_GET["url"] !== "") {
+	$html = file_get_contents("http://kej.tw/flvretriever/youtube.php?videoUrl=".$_GET["url"]);
 	echo $html;
-	preg_match("/請先<a.*href=\"(.*)\">下載此檔案/",$html,$match);
+	preg_match("/請先<a.*href=\"(.*)\">下載此檔案/", $html, $match);
 	?>
 	<script>
 		videoInfo.value="<?php echo file_get_contents($match[1]); ?>";
 		getYouTubeUrl();
 	</script>
-	<hr>
 <?php
 }
 ?>
-<center>
-<?php
-include("../function/developer.php");
-?>
-</center>
 </body>
 </html>
